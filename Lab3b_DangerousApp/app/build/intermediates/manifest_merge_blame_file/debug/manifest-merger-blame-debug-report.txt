@@ -1,0 +1,81 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="course.labs.dangerousapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:7:5-47
+8        android:minSdkVersion="13"
+8-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:7:5-47
+9        android:targetSdkVersion="18" />
+9-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:7:15-44
+10
+11    <!--
+12          TODO - Using a permission element,
+13          define a custom permission with name
+14    		  "course.labs.permissions.DANGEROUS_ACTIVITY_PERM" 
+15          and "dangerous" protection level.
+16    -->
+17    <permission
+17-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:16:5-19:18
+18        android:name="course.labs.permissions.DANGEROUS_ACTIVITY_PERM"
+18-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:17:9-71
+19        android:protectionLevel="dangerous" >
+19-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:18:9-44
+20    </permission>
+21
+22    <application
+22-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:20:5-50:19
+23        android:allowBackup="true"
+23-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:21:9-35
+24        android:debuggable="true"
+25        android:icon="@drawable/ic_launcher"
+25-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:22:9-45
+26        android:label="@string/app_name"
+26-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:23:9-41
+27        android:permission="course.labs.permissions.DANGEROUS_ACTIVITY_PERM"
+27-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:25:9-77
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme" >
+29-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:24:9-40
+30
+31        <!-- TODO - enforce the custom permission on this Activity -->
+32
+33        <activity
+33-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:29:9-49:20
+34            android:name="course.labs.dangerousapp.DangerousActivity"
+34-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:30:13-46
+35            android:label="@string/app_name" >
+35-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:31:13-45
+36
+37            <!--
+38                 TODO - add additional intent filter info so that this Activity
+39                  will respond to an Implicit Intent with the action
+40                  "course.labs.permissions.DANGEROUS_ACTIVITY"
+41            -->
+42
+43            <intent-filter>
+43-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:39:13-43:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:40:17-69
+44-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:40:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:42:17-77
+46-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:42:27-74
+47            </intent-filter>
+48            <intent-filter>
+48-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:44:13-47:29
+49                <action android:name="course.labs.permissions.DANGEROUS_ACTIVITY" />
+49-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:45:17-85
+49-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:45:25-82
+50
+51                <category android:name="android.intent.category.DEFAULT" />
+51-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:46:17-76
+51-->D:\Offline Study\MobileDev_Lab02\Lab3b_DangerousApp\app\src\main\AndroidManifest.xml:46:27-73
+52            </intent-filter>
+53        </activity>
+54    </application>
+55
+56</manifest>

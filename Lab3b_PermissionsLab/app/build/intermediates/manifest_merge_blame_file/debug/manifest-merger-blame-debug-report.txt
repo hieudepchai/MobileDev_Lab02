@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="course.labs.permissionslab"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:7:5-47
+8        android:minSdkVersion="8"
+8-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:7:5-47
+9        android:targetSdkVersion="18" />
+9-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:7:15-44
+10
+11    <!-- TODO - add uses-permission elements -->
+12
+13    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+13-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:11:5-12:80
+13-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:12:9-77
+14    <uses-permission android:name="course.labs.permissions.DANGEROUS_ACTIVITY_PERM" />
+14-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:13:5-86
+14-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:13:22-84
+15
+16    <application
+16-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:14:5-36:19
+17        android:allowBackup="true"
+17-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:15:9-35
+18        android:debuggable="true"
+19        android:icon="@drawable/ic_launcher"
+19-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:16:9-45
+20        android:label="@string/app_name"
+20-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:17:9-41
+21        android:theme="@style/AppTheme" >
+21-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:18:9-40
+22        <activity
+22-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:19:9-27:20
+23            android:name="course.labs.permissionslab.ActivityLoaderActivity"
+23-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:20:13-51
+24            android:label="@string/title_main" >
+24-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:21:13-47
+25            <intent-filter>
+25-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:22:13-26:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:23:17-69
+26-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:23:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:25:17-77
+28-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:25:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:28:9-31:20
+32            android:name="course.labs.permissionslab.BookmarksActivity"
+32-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:29:13-46
+33            android:label="@string/title_permissions" >
+33-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:30:13-54
+34        </activity>
+35        <activity
+35-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:32:9-35:20
+36            android:name="course.labs.permissionslab.GoToDangerousActivity"
+36-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:33:13-50
+37            android:label="@string/title_activity_customization" >
+37-->D:\Offline Study\MobileDev_Lab02\Lab3b_PermissionsLab\app\src\main\AndroidManifest.xml:34:13-65
+38        </activity>
+39    </application>
+40
+41</manifest>
